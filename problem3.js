@@ -1,22 +1,10 @@
-// problem - 3
+// write a function with the name sortMaker() 
+// function parameter will be an array and array will pass only two element everytime.
+// Task: 
+// 1. if array element are positive then sort the array largets to smallest 
+// 2. if both elments are same of the array, then return "equal"
+// 3. if any element are negetive of the array, then return "invalid Input"
 
-
-// function sortMaker(input){
-
-//     if (!Array.isArray(input) == true) {
-//         console.log('write an array please');
-//     } else{
-//         for (let index = 0; index < input.length; index++) {
-//             const arrayNumbersInputed = input[index];
-//             console.log(arrayNumbersInputed.sort());                   
-//         }
-//     }
-// }
-
-
-
-// let numb = [11, 22];
-// sortMaker(numb);
 
 
 function sortMaker(input) {

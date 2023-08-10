@@ -47,12 +47,12 @@ function isLGSeven(input) {
 
 // console.log(isLGSeven(8));
 
-function findingBadData(arr){
-    if(!Array.isArray(arr))[
-        return 'please input an array';
-    ]
+// function findingBadData(arr){
+//     if(!Array.isArray(arr))[
+//         return 'please input an array';
+//     ]
 
-}
+// }
 
 const nagtiveValitatorInput = [9, 1, -3, -2, 5, -4, 7];
 const nagtiveValitator = findingBadData(nagtiveValitatorInput);

@@ -9,6 +9,6 @@ function cubeNumber(input) {
     }
     
 }
-const inputVariable = 'hello';
+const inputVariable = 0;
 const functionsInput = cubeNumber(inputVariable);
 console.log(functionsInput);

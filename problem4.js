@@ -7,13 +7,13 @@
 // দি য়ে replace হবে । (২য় output এর format এ )
 
 
-function findAddress(input){
+function findAddress(obj){
     if(typeof obj !== 'object'){
         return 'please input an object correctly';
     } else{
-        var street = input.street || '__';
-        var house = input.house || '__';
-        var society = input.society || '__';
+        var street = obj.street || '__';
+        var house = obj.house || '__';
+        var society = obj.society || '__';
 
         return street + ',' + house + ',' + society;
 
@@ -24,7 +24,7 @@ function findAddress(input){
 
 var obj = {
     street:10,
-    house:'15A',
+    // house:'15A',
     society:'Earth Perfect',
 }
 

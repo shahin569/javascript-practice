@@ -4,21 +4,31 @@
 // 2. second input means the price of fruits. 10 taka
 
 // Task:
-// 1. if retail money sum is greater then fruits price, return boolean
-// 2. if retail money sum is less then fruits price, return false boolean
+// 1. if retail money sum is greater then fruits price, return boolean true
+// 2. if retail money sum is less then fruits price, return boolean false
 // 3 Bonus: check if first array is empty. if array is empty, give a meaningfull message.
 
 
-function canPay(arr, numb){
-    for (let index = 0; index < arr.length; index++) {
-        const element = arr[index];
-        console.log(element);
-        
+function canPay(changeArray, totalDue){
+
+    let sum = 0;
+
+    for (let index = 0; index < changeArray.length; index++) {
+        const element = changeArray[index];
+        sum += element;  
     }
-    
+    if (changeArray.length === 0) {
+        return 'Bring your money';            
+    }else{
+        if (sum >= totalDue) {
+            return true;            
+        } else{
+            return false;
+        }
+    }    
 }
 
-var arrVr = [1, 2, 5];
-var numbVr = 10;
+var cash = [1, 2, 5];
+var chipsPrice = 10;
 
-console.log(canPay(arrVr, numbVr));
+console.log(canPay(cash, chipsPrice));

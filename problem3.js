@@ -7,19 +7,21 @@
 
 
 
-function sortMaker(input) {
-    if (!Array.isArray(input) || input.length !== 2) {
+function sortMaker(arr) {
+    if (!Array.isArray(arr) || arr.length !== 2) {
         return "invalid Input";
     } else {
-        if (input[0] < 0 || input[1] < 0) {
+        if (arr[0] < 0 || arr[1] < 0) {
             return "invalid Input";
-        } else if (input[0] === input[1]) {
+        } else if (arr[0] === arr[1]) {
             return "equal";
         } else {
-            return input.sort((a, b) => b - a);
+            return arr.sort((a, b) => b - a);
         }
     }
 }
 
-let numb = 55
+let numb = [65, 10];
 console.log(sortMaker(numb));
+
+

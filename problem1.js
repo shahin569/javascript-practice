@@ -1,37 +1,15 @@
 // Problem - 1(basic math)
 
-function cubeNumber(input) {
-    if (typeof input !== 'number') {
+function cubeNumber(number) {
+    if (typeof number !== 'number') {
         return'Please Write a Number';    
     } else{
-        var cubeCalculation = input * input * input;
+        var cubeCalculation = Math.pow(number, 3);
         return cubeCalculation;
     }
     
 }
-// console.log(cubeNumber(3));
-
-
-
-// problem -2
-
-
-
-function matchFinder(string1, string2) {
-
-    const inputMatchTest = string1.includes(string2);
-
-    if (typeof string1 !== 'string' || typeof string2 !== 'string') {
-        return 'Please provide "string"'        
-    }
-    if (inputMatchTest == true) {        
-        return true;
-    } else{
-        return false;
-    }
-}
-
-// console.log(matchFinder('hello', 'Llo'));
+// console.log(cubeNumber(4));
 
 
 

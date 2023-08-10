@@ -16,4 +16,4 @@ function matchFinder(string1, string2) {
     }
 }
 
-// console.log(matchFinder('hello', 'Llo'));
+// console.log(matchFinder('hello', 'he'));
